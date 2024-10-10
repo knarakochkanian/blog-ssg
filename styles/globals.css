@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  height: 100%;
+  overflow: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,11 +17,14 @@
 }
 
 body {
+
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
+main{
+  height: 100vh;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
