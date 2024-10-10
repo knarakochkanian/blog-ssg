@@ -8,7 +8,6 @@ interface HomeProps {
     slugs: string[];
 }
 const Home: React.FC<HomeProps> = ({ slugs }) => (
-    <ThemeProvider>
         <div className="bg-white dark:bg-slate-800 h-full min-h-screentext-black dark:text-white">
             <Header />
             <main className='p-2 flex flex-col gap-2 center'>
@@ -24,7 +23,6 @@ const Home: React.FC<HomeProps> = ({ slugs }) => (
                 ))}
             </main>
         </div>
-    </ThemeProvider>
 );
 
 export const getStaticProps = async () => {
