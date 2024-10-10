@@ -1,7 +1,7 @@
 import React from "react";
 import * as fs from "fs";
 import * as path from "path";
-import * as matter from "gray-matter";
+import matter from "gray-matter";
 import {marked} from "marked";
 
 interface Frontmatter {
