@@ -2,7 +2,7 @@ import Link from 'next/link';
 import * as fs from 'fs';
 import * as path from 'path';
 import Header from './components/Header';
-import { ThemeProvider } from './context/ThemeContext';
+import ThemeProvider  from './context/ThemeContext';
 
 interface HomeProps {
     slugs: string[];
